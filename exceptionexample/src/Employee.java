@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 // Class to represent an employee
-class Employee extends Person {
+class Employee extends Person { 
     private String role;
   //  private ArrayList<Project> projects;
 
