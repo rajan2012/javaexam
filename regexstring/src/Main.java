@@ -1,15 +1,27 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Input string
+        String input = "Welcome to the Java programming world. Java is fun!";
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        // Define the regex pattern
+        String regex = "\\bJava\\b"; // Matches the word 'Java'
+
+        // Compile the pattern
+        Pattern pattern = Pattern.compile(regex);
+
+        // Create a matcher
+        Matcher matcher = pattern.matcher(input);
+
+
+
+        // Find matches and print results
+        System.out.println("Input string: " + input);
+        System.out.println("Matching pattern: " + regex);
+        while (matcher.find()) {
+            System.out.println("Match found: '" + matcher.group() + "' at position " + matcher.start());
         }
     }
 }
