@@ -1,0 +1,6 @@
+name: "Laptop", artno: "A1234", price: 1200
+price: 15, name: "Notebook", artno: "B5678"
+artno: "C9101", price: 25, name: "Mouse"
+price: 8, artno: "D1123", name: "Pen"
+name: "Keyboard", artno: "E4567", price: 45
+artno: "F7890", price: 10, name: "Eraser"

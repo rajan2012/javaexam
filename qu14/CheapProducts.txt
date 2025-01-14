@@ -1,0 +1,3 @@
+artno: "B5678", name: "Notebook", price: 15
+artno: "D1123", name: "Pen", price: 8
+artno: "F7890", name: "Eraser", price: 10

@@ -1,0 +1,3 @@
+interface Collectible {
+    int calcValue();
+}
