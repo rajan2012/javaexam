@@ -123,3 +123,81 @@ the class PersonB all learned words are stored in a List<String>
 there is no keys , it would never enter the loop, 
 looping through key should not be done, if you want to add new keys and value 
 
+
+
+use of anagrams 
+ public static boolean checkanagrams(String s,String s2)
+    {
+        Map<Character,Integer> m=new HashMap<>();
+
+        Map<Character,Integer> m1=new HashMap<>();
+
+        boolean flag=true;
+        if(s.length()!=s2.length())
+            return false;
+        int count=0;
+        for(char c:s.toCharArray())
+        {
+            if(m.containsKey(c))
+            {
+                m.put(c, count);
+            }
+            else
+            {
+                m.put(c,0);
+            }
+        }
+
+        int count1=0;
+        for(char c:s2.toCharArray())
+        {
+            if(m1.containsKey(c))
+            {
+                m1.put(c, count1);
+            }
+            else
+            {
+                m1.put(c,0);
+            }
+        }
+        for(Character c1:m.keySet())
+        {
+            if(m.get(c1)!=m1.get(c1))
+            {
+                flag= false;
+                break;
+            }
+        }
+
+        return flag;
+
+    }
+
+    ################another method
+    failing because after break there should not be any line of code 
+public static boolean checkanagrams(String s,String s2)
+    {
+ for(Character c1:m.keySet())
+        {
+            if(m.get(c1)!=m1.get(c1))
+            {
+                flag= false;
+                break;
+            }
+        }
+
+        return flag;
+
+    }
+
+    
+
+    compare 2 arrays // Compare sorted arrays
+        return Arrays.equals(chars1, chars2);
+
+
+any problems with character ,string with count , use char where index is string value 
+like 
+
+here d is character value .
+c[d]++;
