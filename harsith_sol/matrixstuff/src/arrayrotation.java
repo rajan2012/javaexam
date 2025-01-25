@@ -8,16 +8,25 @@
 public class arrayrotation {
 
 
-    public static String rotate3(String m,int pos) {
+    public static int[] rotate3(int[] m,int pos) {
 
 
-        String n="";
+       int[] s=new int[m.length];
 
+       int index=0;
+        for(int i=pos+1;i<m.length;i++)
+        {
+           s[index]=m[i];
+            index++;
+        }
 
-        n=n.concat(m.substring(pos,m.length()-1)).concat(m.substring(0,pos-1));
+       for(int i=0;i<=pos;i++)
+       {
+           s[index]=m[i];
+           index++;
+       }
 
-
-        return n;
+       return s;
 
 
     }
@@ -41,10 +50,12 @@ public class arrayrotation {
 
         //String p=rotate2("sachintendulkar",8);
 
-        String p=rotate3("sachintendulkar",8);
+        int[] a={1,2,3,4,0,4,3,7};
 
-        System.out.println(p);
+        int[] p=rotate3(a,4);
 
-
+        for(int i=0;i<p.length;i++) {
+            System.out.print(p[i]+" ");
+        }
     }
 }
