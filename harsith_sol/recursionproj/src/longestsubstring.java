@@ -1,19 +1,42 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class longestsubstring {
 
 
-    public static boolean reversem(String s1,String sub) {
+    public static String reversem(String s1) {
         // Base case: if index is out of bounds for either string, return an empty string
+      int[] ch=new int[256];
 
-        if(s1.length()<sub.length()-1) {
-            return false;
+      StringBuilder sb=new StringBuilder();
 
-        }
+      String s="";
 
-        if(s1.startsWith(sub))
-            return true;
+        int start=0;
 
-        return reversem(s1.substring(1),sub);
+      for(int i=0;i<s1.length();i++)
+      {
+          if(ch[s1.charAt(i)]==0)
+          {
+              System.out.println("i has "+i);
+              System.out.println("character at this position "+s1.charAt(i)+"has value "+ch[s1.charAt(i)]);
+              sb.append(s1.charAt(i));
+              ch[s1.charAt(i)]++;
+
+          }
+          else
+          {
+              System.out.println("inside method "+sb.toString());
+              if(s.length()<sb.length()) {
+                  s = sb.toString();
+              }
+              Arrays.fill(ch,0);
+              sb.setLength(0);
+
+          }
+      }
+
+      return s;
 
     }
 
@@ -21,7 +44,7 @@ public class longestsubstring {
     {
         String s="Madam in Eden I’m Adam";
 
-        boolean s1=reversem("rajan","na");
+        String s1=reversem("abcabcdbb");
 
         System.out.println(s1);
 
