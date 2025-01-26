@@ -1,3 +1,4 @@
+
 class Node {
     int data;
     Node next;
@@ -10,11 +11,9 @@ class Node {
 
 class LinkedListQueue {
     private Node front, rear;
-    private int size; // To keep track of the size of the queue
 
     public LinkedListQueue() {
         front = rear = null;
-        size = 0;
     }
 
     public boolean isEmpty() {
@@ -23,13 +22,12 @@ class LinkedListQueue {
 
     public void enqueue(int data) {
         Node newNode = new Node(data);
-        if (rear == null) { // If queue is empty
+        if (rear == null) {  // If queue is empty
             front = rear = newNode;
-        } else {
-            rear.next = newNode;
-            rear = newNode;
+            return;
         }
-        size++; // Increment the size
+        rear.next = newNode;
+        rear = newNode;
     }
 
     public int dequeue() {
@@ -40,10 +38,9 @@ class LinkedListQueue {
         int data = front.data;
         front = front.next;
 
-        if (front == null) { // If queue becomes empty
+        if (front == null) {  // If queue becomes empty
             rear = null;
         }
-        size--; // Decrement the size
         return data;
     }
 
@@ -54,13 +51,9 @@ class LinkedListQueue {
         }
         return front.data;
     }
-
-    public int getSize() {
-        return size; // Return the current size
-    }
 }
 
-public class LinkedListQueueDemo {
+public class linkedlistqueue2 {
     public static void main(String[] args) {
         LinkedListQueue queue = new LinkedListQueue();
 
@@ -68,12 +61,9 @@ public class LinkedListQueueDemo {
         queue.enqueue(20);
         queue.enqueue(30);
 
-        System.out.println("Size of the queue: " + queue.getSize()); // Output: 3
-
         System.out.println("Dequeued: " + queue.dequeue());
-        System.out.println("Size of the queue: " + queue.getSize()); // Output: 2
-
-        queue.enqueue(40);
-        System.out.println("Size of the queue: " + queue.getSize()); // Output: 3
+        System.out.println("Front element: " + queue.peek());
+        System.out.println("Queue is empty: " + queue.isEmpty());
     }
 }
+
