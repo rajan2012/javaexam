@@ -5,7 +5,12 @@ public class Restaurant {
     public Restaurant(String name,double rating)
     {
         this.name=name;
-        this.rating=rating;
+        if(rating<0.0){
+            this.rating=0.0;}
+        else if(rating>5.0){
+            this.rating=5.0;}
+        else {
+            this.rating=rating;}
     }
 
     void setRating(int rating)
@@ -25,29 +30,15 @@ public class Restaurant {
 
     double getrating()
     {
-        return this.rating;
+        return rating;
     }
 
     String getname()
     {
-        return this.name;
+        return name;
     }
 
-    public Restaurant findBest(Restaurant[] restaurant)
-    {
-        Restaurant b=new Restaurant(restaurant[0].name,restaurant[0].rating);
-        double rating=Double.MIN_VALUE;
-        for(Restaurant r:restaurant)
-        {
-            if(r.rating>rating)
-            {
-                rating=r.rating;
-                b=r;
 
-            }
-        }
-        return b;
-    }
 
 
 

@@ -14,17 +14,4 @@ public class product {
 
     }
 
-    double cateogryValue(String category)
-    {
-        double total=0.0;
-        for(product p:products)
-        {
-            if(p.category.equals(category))
-            {
-                total+=p.price;
-
-            }
-        }
-        return total;
-    }
 }
