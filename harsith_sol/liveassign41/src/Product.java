@@ -28,8 +28,32 @@ public class Product {
         this.brandName=brandName;
     }
 
-    void setPrice(String price)
+    void setPrice(double price)
     {
         this.price=price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+   static Product search(String productName, Product[] products)
+    {
+         for(Product p:products) {
+             if (p.name.equals(productName)) {
+                 return p;
+                 // break;
+             }
+
+         }
+         return null;
     }
 }
