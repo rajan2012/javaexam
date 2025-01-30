@@ -6,7 +6,7 @@ public class main11 {
 
         char[] newword = word.toCharArray();
         StringBuilder sb = new StringBuilder();
-     String    res= "";
+        String    res= "";
 
         for(int i =0; i< newword.length;i++){
 

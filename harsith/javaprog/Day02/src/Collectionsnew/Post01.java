@@ -10,10 +10,9 @@ public class Post01 {
 
     public Post01(String content, String hashtags) {
         this.content = content;
-       String[] str = hashtags.split("\\s+");
+        String[] str = hashtags.split("\\s+");
         this.hashtags = new ArrayList<>(Arrays.asList(str));
     }
-
     public String getContent() {
         return content;
     }

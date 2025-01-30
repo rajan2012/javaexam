@@ -12,6 +12,7 @@ public class Evaluation {
 
         // Collect posts with keyword 'java'
         List<Post01> javaPosts = sms.collect("java");
+
         System.out.println("Posts with 'java':");
         for (Post01 p : javaPosts) {
             System.out.println(p);
