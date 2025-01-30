@@ -1,17 +1,9 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Tuple<String, Integer> tuple1 = new Tuple<>("Alice", 25);
+        Tuple<Double, String> tuple2 = new Tuple<>(99.9, "Temperature");
 
-
-try{
-    //calling square method
-}
-catch(ArithmeticException e)
-{
-    System.out.println(e.getMessage());
-}
-        // to see how IntelliJ IDEA suggests fixing it.
-
+        System.out.println(tuple1); // Tuple ID: 0 | Left: Alice | Right: 25
+        System.out.println(tuple2); // Tuple ID: 1 | Left: 99.9 | Right: Temperature
     }
 }
