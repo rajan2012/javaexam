@@ -1,0 +1,267 @@
+Message
+"str.replaceAll(""[^a-zA-Z0-9]"", "" "")
+"
+"import java.util.Arrays;  int[] ch = new int[256]; Arrays.fill(ch, 0); // Explicitly sets all elements to 0
+"
+"// Clear the StringBuilder sb.setLength(0);
+"
+"use  HashSet<Character> seen = new HashSet<>(); when dealing with character rather than string builder
+"
+"recusion  solved for array datasets
+"
+"Use Indices or Slices:  Use indices or array slices to handle subarrays in recursive calls. For example, you can pass the start and end indices for the current subarray to the recursive function.
+"
+"reverse of array can also be done by using concept of swapping where , start is swappend with end and both counter are adjusted to swap next number
+"
+"basic way to solve array for recusion problem  if(index==a.length) return m; //change the below one as per problems m.put(a[index], m.getOrDefault(a[index],0)+1); return sumarray(a,index+1,m);
+"
+"the base case should be in top  if(index==a.length) { return l; }  or in general too else if we have sme line defined before this line  we can get indexout of bound problem
+"
+"##for finding subset of sum of array  public static List<List<Integer>> findSubsets(int[] a, int index, int sum, List<Integer> current) { // Result list to store all valid subsets List<List<Integer>> result = new ArrayList<>();  // Base condition: if we reach the end of the array if (index == a.length) { if (sum == 0) { result.add(new ArrayList<>(current));  // If sum is zero, add the current subset to result } return result; }  // Include the current element in the subset and reduce the sum if (a[index] <= sum) { current.add(a[index]); result.addAll(findSubsets(a, index + 1, sum - a[index], current)); current.remove(current.size() - 1);  // Backtrack }  // Exclude the current element and move to the next result.addAll(findSubsets(a, index + 1, sum, current));  return result; }
+"
+"In Java, the addAll() method is used to add all elements from one collection (such as a list, set, or another collection) into another collection. It appends all the elements from the specified collection to the end of the calling collection.
+"
+"List<List<Integer>> result = new ArrayList<>();
+"
+"List<List<Integer>> subsets = findSubsets(arr, 0, sum, new ArrayList<>()); sending empty arraylist
+"
+"adding list into another list  result.add(new ArrayList<>(current));
+"
+"removing element from list  current.remove(current.size() - 1)
+"
+"list1.add(""Apple""); list1.add(""Banana"");  list2.add(""Orange""); list2.add(""Grape""); list1.addAll(list2);
+"
+"Backtracking Step: After exploring all subsets including 2 and 3, the algorithm removes the 3 and backtracks to explore other possibilities.  current = [2] Next Recursion: After removing 3, the algorithm explores further possibilities (such as subsets that exclude 2), ensuring that it looks at all possible subsets that sum to 7.
+"
+"map.remove(""2"");  // Removes the entry with key ""2"" (Banana)
+"
+"sb.deleteCharAt(5);  // Removes the character at index 5 (the comma)
+"
+"Remember that in a 2D matrix matrix[i][j], i refers to the row index and j refers to the column index.
+"
+"p[j][i]=m[row-(i+1)][j]; --bring last row to zero  you are shifting matrix by 90 clockwise  for anticlockwise ,p[i][j]=m[j][cols-(i+1)];
+"
+"Clockwise 90° rotation: The element at position (i, j) in the original matrix moves to (j, n-i-1) in the rotated matrix. Counterclockwise 90° rotation: The element at position (i, j) moves to (n-j-1, i).  rotation logic
+"
+"for matrix , do in paper and see whats the logic for p[i][j]
+"
+"for reversal across each row   p[j][i] = m[row - (i + 1)][j];
+"
+"atleast try with 2 example for coming with logic, se do u have to traverse through rows or cols  for cols ,
+"
+"p[i][j] = m[row - (i + 1)][j];
+"
+"write first before rigting code, imp logic and part of code so that in beginning u think clearly and no panic of any problem further in exam
+"
+"right down imp , brief of class,interface question. use of which collection and basic logic like for loop , for recussion, for string ,matrix , queue , of exception handling - may be 10 min
+"
+"n.concat(...) doesn't modify n. The concat method creates and returns a new string, but you aren't assigning it back to n fix is
+"
+"n=n.concat(m.substring(pos,m.length()-1)).concat(m.substring(0,pos-1));
+"
+"LinkedHashMap-Maintains insertion order. TreeMap-Keeps keys sorted (natural order or custom comparator).
+"
+"similarily for set  LinkedHashSet TreeSet
+"
+"Set<Integer> linkedHashSet = new LinkedHashSet<>(Arrays.asList(1, 2, 3, 4, 5)); System.out.println(linkedHashSet); // Output: [1, 2, 3, 4, 5]
+"
+"The line k = k % n; // Normalize rotation count ensures that the number of rotations k is adjusted to a valid range within the length of the string (n).
+"
+"for (int i = b - 1; i > a; i--) { System.out.print(i + "" ""); }  incremental other way round
+"
+"sometimes, when they ask for some output , like beep , with array of both , just print it . don't store in another array . its simple question
+"
+"<Media omitted>
+"
+"convert into integer  a= (int) (remainder*Math.pow(10,count--));
+"
+"Math.pow(10, 2) = 100.0
+"
+"System.out.print(""Enter a number: ""); int number = scanner.nextInt(); int reversed = 0;  while (number != 0) { int digit = number % 10;  // Extract the last digit reversed = reversed * 10 + digit;  // Add it to the reversed number number /= 10;  // Remove the last digit }
+"
+"String numStr = Integer.toString(number); convert number to strng to print digit
+"
+"String s=Integer.toString(n);  for(char c:s.toCharArray()) { System.out.println(c); }
+"
+"always check for negation of what they ask  if (digit % 2 != 0) {  // Check if it is odd allEven = false; break; }  boolean allEven = true;  compare negation of condition
+"
+"field[i] = random.nextInt(21) - 10; // Random numbers from -10 to 10
+"
+"very imp-write logic and imp tricsk u are gonna use to solve each question of exam and then start coding  because u could have time , exam phscological pressure in the last 20 min , may be brain wud not think in right direction ,so if u have written on paper ,just have to copy paste
+"
+"after every question solution, check if result correct , something missing in 1 min
+"
+"in last 10 min , check if all the submission correct
+"
+"Difficulty Levels: Typically, exams start with easy or medium questions, and the difficulty increases. Prioritize solving easier questions first.
+"
+"Here’s a comprehensive strategy to ace your Java coding exam, ensuring you stay calm, confident, and focused:  1. Understand the Exam Format Time Allocation: Divide the total exam duration by the number of questions. If it’s a 3-hour exam with 9 questions, you roughly get 20 minutes per question. Keep 15 minutes for reviewing. Difficulty Levels: Typically, exams start with easy or medium questions, and the difficulty increases. Prioritize solving easier questions first. 2. Prepare Strategically Before the Exam Master Core Topics:  Strings: Manipulation, substrings, rotations, palindrome, and patterns. Arrays: Sorting, searching, prefix sums, sliding windows, subarrays, rotations. Recursion: Base cases, backtracking, subsets, permutations. Matrix: Traversals (row-wise, column-wise, diagonals), rotations, searching. Data Structures: ArrayLists, HashMaps, Stacks, Queues. Math: GCD, LCM, modular arithmetic, prime numbers. OOP Concepts: Encapsulation, inheritance, method overriding, and polymorphism. Practice Previous Papers:  Identify patterns or recurring types of questions. Time yourself while solving these questions. Build Templates:  Prepare reusable code templates for recursion, matrix traversal, sorting, searching, etc. Example: A skeleton for recursion or DFS in a 2D grid. Write Clean Code:  Always include meaningful variable names and comments. Practice proper indentation for better readability. 3. During the Exam Phase 1: Analyze Questions (First 5–10 Minutes) Skim through all the questions. Classify: Divide questions into: Easy: Direct or familiar (e.g., array traversals, finding min/max). Medium: Needs some thought (e.g., recursion or combinatorics). Hard: Complex logic or time-consuming (e.g., advanced backtracking). Start with the easy ones to build confidence and momentum
+"
+"####very imp  Plan Before You Code: Quickly write down a pseudo-code or steps. Identify reusable parts (e.g., utility functions for matrix traversal).
+"
+"###imp  Stuck? Skip and Return Later:  Don’t spend too much time on one question (e.g., more than 10 minutes). Move on and return later if time allows
+"
+"Write comments explaining your logic if time runs out.
+"
+"Infinite Loops in Recursion/Loops:  Solution: Ensure base cases are correct and loops have termination conditions.
+"
+"######## Final Exam Day Tips Relax and Rest: Get at least 7-8 hours of sleep before the exam. Stay Positive: Believe in your preparation. Avoid Overthinking: Focus on solving questions step-by-step. Carry Essentials: Ensure you have all necessary materials (e.g., pen, ID, etc.)
+"
+"queue-eneque,deque,front,empty
+"
+"empty queue has both rear and front as -1 , if both are equal that means first element  when rear =size-1 then its full in enqeuing rear =rear+1 dequeue rear=rear-1
+"
+"no wheil dequeing , front is front+1 till it equals -1 since dequeu is also done from head (front) ,first in first out
+"
+"circula array
+"
+"<Media omitted>
+"
+"in link list , we only have one pointer called head, so to go to end of linked list we have to trsverse using temp or next pointer
+"
+"<Media omitted>
+"
+"Here, x does not store the actual data of these objects, but only references to them. In particular, this can be the null reference, for which one must watch out, for example
+"
+"<Media omitted>
+"
+"<Media omitted>
+"
+"<Media omitted>
+"
+"enqueue is inserting element at end of queue
+"
+"<Media omitted>
+"
+"<Media omitted>
+"
+"<Media omitted>
+"
+"<Media omitted>
+"
+"public void enqueue(int data) { Node newNode = new Node(data); if (rear == null) {  // If queue is empty front = rear = newNode; return; } rear.next = newNode; rear = newNode; }
+"
+"ArrayList<Integer> numbers = new ArrayList<>(); numbers.add(1); numbers.add(2); numbers.add(3);  // Converting to an Integer array Integer[] array = numbers.toArray(new Integer[0]);
+"
+"q.contains(33) public boolean contains(Object obj)
+"
+"public boolean contains(Object obj) { Elem position = start; while (position != null) { if (position.getObject().equals(obj)) { return true; } position = position.getNext(); } return false; }
+"
+"position = position.getNext();
+"
+"adding a new element or array or queue is using enqueue , traversing through each element of queue
+"
+"int[] arr = new int[size()];
+"
+"converted into integer  arr[index++] = (Integer) position.getObject();
+"
+"The loop stops when temp.getNext() is null, meaning the last element is not processed in this loop. This works only if you don’t need to process the last element.
+"
+"a for loop ten times (a) first output the current value of x a means  run a loop from 0 to 10 first print value of x and then update value of x
+"
+"double x = 2.0;
+"
+"46341
+"
+"o find the smallest positive int number n that is so large that the value n · n can no longer be represented as a int means to find this value , if value goes beyond this it would be long
+"
+"so this one (long) n * n > Integer.MAX_VALUE
+"
+"<Media omitted>
+"
+"in linked list   Node newNode = new Node(name, age); is based on constructor of Node/elem
+"
+"Node current = front; System.out.println(""Name: "" + current.name + "", Age: "" + current.age);
+"
+"In case sequence contains numbers < 0 or >= word.length() return the String ""Invalid Sequence""  if (index < 0 || index >= word.length()) { return ""Invalid Sequence""; }
+"
+"matrix  int[][] m={{1,2,3},{2,3},{1,3,2}}
+"
+"here we have 3 inner array which can be represented as
+"
+"m[i] where if i=1 it gives first array of matrix , in this way cols of matrix can be initlized dynamically like below  int[][] result = new int[a.length][]; for (int i = 0; i < a.length; i++) { if (a[i] < 0) { // Ignore negative sizes (could also throw an error) result[i] = new int[0]; } else { result[i] = new int[a[i]]; // Initialize inner arrays with a[i] size } }
+"
+"If a[i] < 0, it assigns an empty array (new int[0]) to the corresponding row.
+"
+"For a = {2, 3, -1, 4}:  result[0] → new int[2] result[1] → new int[3] result[2] → new int[0] result[3] → new int[4]
+"
+"finding unique words using primitive logix  // Split the string into words by spaces and convert to lowercase String[] words = s.toLowerCase().split(""\\s+"");  // Variable to keep track of unique word count int uniqueCount = 0;  // Array to mark words we've already seen boolean[] seen = new boolean[words.length];  // Loop through each word for (int i = 0; i < words.length; i++) { if (!seen[i]) { // Check if this word is already marked uniqueCount++; // Count it as unique // Mark all occurrences of this word for (int j = i + 1; j < words.length; j++) { if (words[i].equals(words[j])) { seen[j] = true; // Mark duplicates } } }
+"
+"In the class Evaluation, implement the method double categoryValue(String category) d returns the value of all products  there array of products going to be iterated so in evaluation constructor need to initalize products
+"
+"this one public class Evaluation { private List<Product> products;  // Constructor to initialize the list of products public Evaluation(List<Product> products) { this.products = products; } }   is just like declaring 2 list and assigning list1 to list2 list<int>=new arral<> list2 list2=list1
+"
+"This approach assumes that the caller (who creates the Evaluation object) will provide a valid List<Product> object when constructing an Evaluation instance.
+"
+"List<Product> productList = new ArrayList<>(); productList.add(new Product(""item1"", 10)); productList.add(new Product(""item2"", 20));  Evaluation evaluation = new Evaluation(productList);
+"
+"evaluation.cateogryValue(""Electronics""); will call this method but product array is initlized by constructor
+"
+"Only the string ""Electronics"" is explicitly passed to the method. The evaluation object itself is not passed as an argument but is implicitly available as this.
+"
+"one way  evaluation evaluation = new evaluation(products); another way Restaurant r1 = new Restaurant(""The Gourmet Spot"", 4.5); Restaurant r2 = new Restaurant(""Tasty Treats"", 5.0); Restaurant r3 = new Restaurant(""Quick Bites"", 3.8);  Restaurant[] restaurants = {r1, r2, r3};
+"
+"if (bestRestaurant != null) { , bestRestaurant  is object
+"
+"here  Restaurant bestRestaurant = finder.findBest(restaurants); array of object is passed , so even when u don't initilize object in constructot, it should be fine
+"
+"Make sure that, as usual, the rating is in the interval between 0 and 5 inclusive. If a value is less than 0, set the rating to 0 and if the rating is greater than 5, set the rating to 5  it says handle this situation when initilizing the rating column , if you separately call it , then it won't handle all the time
+"
+"in if condiiton, i have put this.rating which is wrong , i should check condition of rating from param and then assign value  if(this.rating<0.0){ this.rating=0.0;} else if(this.rating>5.0){ this.rating=5.0;} else { this.rating=rating;} } ###very imp
+"
+"instead of this  String getname() { return this.name; }  use  String getname() { return name; }  while setting , can use this but not while getting
+"
+"Use this When There’s Ambiguity You should use this if there is a local variable or parameter with the same name as the instance variable  when same word is passed in param like in setting
+"
+"way to handle null  if (restaurants == null || restaurants.length == 0) { return null; // Return null if the array is empty or null }
+"
+"both are similar  //Restaurant b=new Restaurant(restaurant[0].name,restaurant[0].rating); Restaurant b=restaurant[0];
+"
+"way to compare variable of 2 object in class  Restaurant b=restaurant[0]; double rating=Double.MIN_VALUE; for(Restaurant r:restaurant) { //compare if(r.getrating()>b.getrating()) }
+"
+"Handling at Object Creation (Constructor) Why it's better: The constructor ensures that as soon as the Restaurant object is created, the rating is always valid.
+"
+"Setter Version Purpose: Setters are used to update values after the object is already created. so manually have to check and sset , which is extra work
+"
+"constructor initialize with null , give memory when nothing given
+"
+"Use Case: The setter is useful when you need to modify the rating after the object is created.
+"
+"when generally they ask u to work with array of object of 1 class like product , there would be another class which is of array type like we have here product parser , then restaurantbig in live assign 5
+"
+"parts[0].matches(""\\d{5,}""))  // ID must have at least 5 digits
+"
+"String[] parts = productString.split("";""); these condition if (parts.length > 2 && !parts[2].isEmpty())
+"
+"###imp  DictionaryElement[] dictionary;  public ArrayDictionary(int size) { dictionary = new DictionaryElement[size]; } here ArrayDictionary is class which contains array of DictionaryElement so each object of array dict has DictionaryElement of some size each DictionaryElement is object with key and value . so arraydic[i]=new DictionaryElement(,)
+"
+"### ArrayDictionary dictionary = new ArrayDictionary(3);  // Add some elements dictionary.add(""apple"", 1);  boolean add(Object key, Object value) { boolean flag = false; for (int i = 0; i < dictionary.length; i++) { if (dictionary[i] == null || dictionary[i].getkey() == key) { dictionary[i] = new DictionaryElement(key, value); flag = true; } } return flag; } dicitionary is array, each index has dictinoary object
+"
+"when asked these variable is of object type so also declared as object  Object key; Object value;  public DictionaryElement(Object key, Object value)
+"
+"see what u are setting and returing in set and getter method, because of copy paste can make mistake
+"
+"boolean add(Object key, Object value): The methods searchs in the dictionary for the next free position and then stores a DictionaryElement there with the values key and value. If an entry with the key already exists, overwrite the saved value vlaue with the new value.  for this when not null then overrite rather than keepin gor condiiton and creating new object
+"
+"However, it may overwrite an existing value even if it was intended to only update the value if the key already exists, depending on your use case. This might not always be desirable if you wanted more granular control.
+"
+"for (int i = 0; i < dictionary.length; i++) { if (dictionary[i] == null) { dictionary[i] = new DictionaryElement(key, value); flag = true; } else { if(dictionary[i].getkey() == key) { dictionary[i].setvalue(value); //here can directly return true; flag = true; } }
+"
+"sometimes directly return true or false is better than using flag=true , which give smetimes diff result , so if get any issue directly return true or false
+"
+"##imp  create a PhoneBook class that contains only static class members  this is not correct  pb.add(name,number); when pb is of PhoneBookEntry pb.add(new PhoneBookEntry(name,number)); --correct
+"
+"// Static list to store PhoneBookEntry objects private static List<PhoneBookEntry> phoneBook = new ArrayList<>();
+"
+"You don't need to check for null in the list because an ArrayList (or most List implementations) shouldn't contain null unless explicitly added. ####important , in array declaration,may be we can find
+"
+"in this public static void main(String[] args) { // Test the PhoneBook functionality PhoneBook.change(""Alice"", ""123456""); } we directly call method using classname since all members of phonebook is static as mentioned in question  Your taks is to create a PhoneBook class that contains only static class members. this means all are called using calssname
+"
+"this means we don't have constructor in phonebook
+"
+"Yes, if all members of a class are static, there is no need for a constructor because constructors are used to initialize instance (non-static) members of a class. Since static members are tied to the class itself and not to any specific instance, you can work with them without creating objects of the class.
+"
+"Static Variable:  The static keyword indicates that the variable pb belongs to the class and not to any specific instance of the class. There is only one copy of the pb variable shared across all uses of the PhoneBook class, no matter how many times the class is referenced.
+"
+"means same PhoneBookEntry to all
+"
