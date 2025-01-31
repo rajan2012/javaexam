@@ -1,5 +1,6 @@
 
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -10,8 +11,8 @@ public class Main {
     public static String overlap(String s1,String s2)
     {
         Set<String> s3=new HashSet<>();
-        List<String> l=new ArrayList<>();
 
+        List<String> l=new ArrayList<>();
 
         for(String s4:s1.split("\\s"))
         {

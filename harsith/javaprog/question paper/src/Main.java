@@ -7,7 +7,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         String str = "This is a good password";
+
         String[] words = str.split(" ");
+
         StringBuilder op = new StringBuilder();
 
         for(int i=0; i< words.length;i++){

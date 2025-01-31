@@ -7,7 +7,7 @@ import java.util.Set;
 public class Stringcheck2 {
     // Don't change this method
     public static int countUniqueWords(String s1){
-       String [] sar=s1.split("\\s+") ;
+       String [] sar=s1.split("\\s+");
 
        int unique=0;
 
