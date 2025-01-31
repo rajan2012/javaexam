@@ -9,6 +9,8 @@ public class h41 {
 
         System.out.print("Sequence: ");
         int[] sequence = new int[word.length()];
+
+
         for (int i = 0; i < word.length(); i++) {
             sequence[i] = sc.nextInt();
         }
