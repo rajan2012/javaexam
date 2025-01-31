@@ -52,9 +52,11 @@ public static String interleave(String a,String c)
         String a="abc";
         String c="123";
 
-        String res=patternrep2(a,c);
+        //String res=patternrep2(a,c);
 
-        System.out.println(res);
+        //System.out.println(res);
+
+        System.out.println("this is rajan".replace(" ",""));
 
 
     }
