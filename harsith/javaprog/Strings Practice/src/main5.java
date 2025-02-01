@@ -6,6 +6,7 @@ public class main5 {
         static String rearrange(String word, int[] sequence) {
 
             char[] chword = word.toCharArray();
+
             StringBuilder sb = new StringBuilder();
 
             for(int i =0;i< sequence.length;i++){
