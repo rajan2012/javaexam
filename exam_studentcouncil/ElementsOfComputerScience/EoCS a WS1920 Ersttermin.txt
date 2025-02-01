@@ -1,0 +1,36 @@
+Klausur WS 1920
+1) Make an ER Model with:
+	A room is only uniquely determined within a flat
+	A flat is determined by its address
+	There are bedrooms and kitchens
+	A room can be a kitchen and a bedroom
+	A person can sleep in a bedroom
+	A person is identified by its surname and last name
+	A person can live in many flats
+	Not all flats do have inhabitants
+
+2)
+a) Find candidate keys. When unnecessary keys, reduction of points
+b) Decomposition algorithm. 3 FD were given
+c) Make a canonical cover
+
+3) 1 domain relational calculus and 1 tuple relational calculus
+
+4) 3 relational algebra
+	Persons that have borrowed exactly 3 books
+	Persons that have borrowed all books from Kamper
+
+5) 6 SQL queries
+	1 window query
+	1 view
+	1 recursion
+
+6) A = (0,1,2) x (0,1,2); determine if it was an equality (/equivalence) relation or not and why
+Define B+ tree
+Define primary key, foreign key, unique key
+
+7) Convert schema into a relational model
+
+8)
+a) Simplify SQL query
+b) Make a nested loop join
