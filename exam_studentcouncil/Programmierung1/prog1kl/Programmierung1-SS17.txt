@@ -1,0 +1,6 @@
+Hey,
+
+ich wollte euch noch ein paar Aufgaben aus der Programmierung I Klausur schicken. Wir haben 11 Aufgaben bekommen und mussten 10 für die 100% bearbeiten. Leider konnte ich mir nur zwei merken: 
+
+- Man sollte eine Methode schreiben, die ein Feld aus Integers übergeben bekommt und checkt, ob eine positive Zahl mindestens zweimal vorkommt. Wenn das der Fall ist, soll das Vorzeichen geändert werden und zwar für alle Funde dieser Zahl. Als Beispiel: (2 4 5 2 3 2 3) und ausgeben soll das Programm (-2 4 5 -2 -3 -2 -3)
+- Man bekommt einen String, der aus 3 Teilstrings besteht und so aufgebaut ist: String1String2String1. Die Strings sind alle gleich lang. Das Programm soll prüfen ob der erste Teilstring gleich dem dritten Teilstring ist, und wenn das der Fall ist, den mittleren zurückgeben. Als Beispiel: Der String lautet "AutoBuchAuto". Es soll "Buch" zurück gegeben werden.
