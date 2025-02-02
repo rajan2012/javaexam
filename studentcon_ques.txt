@@ -1,0 +1,114 @@
+.1) Write a method "countStringOccurrence" that determines how often a substring t appears in a string s.
+
+a.2) Write a method "myHiddenWord" that finds and returns the hidden word in a string s.
+
+b.1) Write a method "findMaxAndSubtract" that returns the difference between the maximum value and the rest of the values in the array.
+
+b.2) Write a method "deleteMinMax" that replaces the minimum and maximum values in an array with 0 and returns the modified array.
+
+Note:
+a.1):
+
+The string s is always longer than the substring t, preventing an error.
+Example: String s = "abaababbbababb" and substring t = "ab" → result: 5
+a.2):
+
+The word consists exclusively of uppercase letters.
+The letters may be scattered in the string and do not have to appear consecutively.
+Example(s):
+String s1 = "welcomeHOMEagain" → "HOME"
+String s2 = "kUndeNinformatIon" → "UNI"
+b.1):
+
+The maximum value should not be subtracted from itself.
+Example: int[] array = {5,4,1,2,6,50,4,2}; Maximum is 50;
+Difference is 26 because 50 - (5+4+1+2+6+4+2) = 26
+b.2):
+
+The possible int[] array is unsorted and contains n elements.
+Values may appear multiple times, including min and max values.
+Task 5 (Recursion)
+c.1) Write a recursive method "recLength" that returns the length of a string s:
+
+0 if s is empty.
+1 + recLength(s.length() - 1) if s is not empty.
+c.2) Write a recursive method "recSumValue" that computes the sum of an integer value down to 0 (inclusive):
+
+0 if value == 0
+value + recSumValue(value - 1) if value > 0
+c.3) Write a recursive method "recSumArray" that returns the sum of elements in an array:
+
+0 if the array is empty.
+Value at last position + recSum(new array with length n-1 of the old array).
+Note:
+c.1):
+
+It makes sense to gradually shorten the string from the first to the last character.
+Example: String s1 = "Studi" → 5, because:
+(1 + "Studi") + (1 + "udi") + ... + (1 + "i") + (0 + "") = 5
+c.2):
+
+The parameter value is an Integer and value > 0.
+Example(s):
+int value1 = 5 → 15, because 5 + 4 + 3 + 2 + 1 + 0 = 15.
+int value2 = 9 → 45
+Possible modification: What changes would be needed if value is negative?
+c.3):
+
+There are various ways to implement this, e.g., using the copyOf() method for arrays.
+Example: int[] array = {3,1,6,4,3,5,9} → 31
+Modification: What should change if the array itself contains smaller arrays to compute the total sum?
+Task 6 (Abstract Classes)
+Write an abstract class "Prüfung" ("Exam"), which is extended by the classes "Klausur" ("Written Exam") and "Mündlich" ("Oral Exam").
+Exam Class (Prüfung)
+The class contains a subject and an ID, which should increase with each new object creation.
+Written Exam Class (Klausur)
+Contains boolean class variables anmeldung (registered) and geschrieben (taken).
+These two variables have false as their default value when a Klausur object is created.
+Includes two methods "anmelden" (register) and "schreiben" (write), which change their boolean values based on passed parameters.
+Oral Exam Class (Mündlich)
+Contains a date (parameter type: int).
+Includes a method "datumsaenderung" (changeDate) that allows the date to be changed at any time.
+Both "Klausur" and "Mündlich" classes contain a "toString()" method that returns an appropriate string.
+Write a test method:
+Create one object each for "Klausur" and "Mündlich".
+The written exam registration now exists, so the boolean value must be changed.
+The date for the oral exam is incorrect and should be postponed by two weeks.
+Call the "toString()" methods before and after each change.
+Task 7 (Queue, Stack)
+Queue:
+The "Queue" class provides a (partial) implementation of a queue using an int[] array.
+Stack:
+The "Stack" class implements a stack using an int[] array.
+Note:
+Gain an overview and understand how they work before modifying.
+Both classes allow additional features like new methods and modifications.
+The provided code is for practice and not a reference implementation.
+Task 8 (File I/O and Exception Handling)
+The "FileIO" class contains two methods and a main() method that calls them.
+When the main() method is executed, two different .txt files are created, each based on one of the methods.
+Methods:
+Method 1:
+Generates two random integers per line in the file.
+The parameter n determines the number of lines.
+Method 2:
+Generates a fixed number of specific sentences.
+The parameter n is not needed.
+Exercises:
+Write a method that returns the sum of all lines.
+Write a method that returns sentences in order from shortest to longest.
+Note:
+Proper exception handling must be implemented in both methods.
+It is sufficient to throw a general exception.
+Task 9 (Lists and Collections)
+The class "Liste" ("List") is provided. It creates a list (ArrayList) and already contains some methods.
+Before working on it, review the code carefully for better understanding.
+Exercises:
+Some important methods are not fully implemented due to a transmission error.
+The JavaDoc documentation for each method gives hints about the intended implementation.
+The main class "MainklasseListe" contains a main() method that needs proper structuring:
+First, create a List object with an appropriate length.
+Then, test the provided and modified methods for correctness.
+Note:
+The implementation of missing methods is flexible, but hints may help.
+The testing in the main() method is open-ended, with no single "best" solution.
