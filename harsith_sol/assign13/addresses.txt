@@ -1,0 +1,4 @@
+54296 Trier
+02999 Knappensee-Koblenz Gem. Lohsa
+ABCDE InvalidCity
+1234 ShortPostal CityName
