@@ -23,12 +23,11 @@ public class regulexp {
         Pattern p = Pattern.compile(numreg3);
         Matcher m = p.matcher(s);
 
-        if (m.find()) {
-            System.out.println(m.group());
 
-        }
 
         StringBuilder sb=new StringBuilder();
+
+        System.out.println(m.find());
 
         while (m.find()) {
             sb.append(m.group());
