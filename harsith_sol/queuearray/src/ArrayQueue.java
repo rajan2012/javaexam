@@ -95,4 +95,16 @@ class ArrayQueue {
         return queue2;
     }
 
+    public boolean ispalin()
+    {
+        for(int i=0;i<size;i++)
+        {
+            if(queue[(front+i)%capacity]!=queue[(rear-i)%capacity])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
