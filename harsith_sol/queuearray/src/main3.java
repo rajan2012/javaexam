@@ -59,8 +59,8 @@ public class main3 {
 
     public static void main(String[] args) {
 
-        String s="rajansah";
-        String s2="sahrajan";
+        String s="citytrier";
+        String s2="triercity";
 
        // List<List<Character>> c=isrotation(s,s2);
 
