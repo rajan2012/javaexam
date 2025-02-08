@@ -3,7 +3,7 @@ import java.util.List;
 
 public class main2 {
 
-    public static int[] findpairs(int[] a,int target)
+    public static  List<List<Integer>> findpairs(int[] a,int target)
     {
         int rem=0;
 
@@ -11,20 +11,31 @@ public class main2 {
 
         List<Integer> l=new ArrayList<>();
 
+        List<List<Integer>> l2=new ArrayList<>();
+
         for(int i=0;i<a.length;i++)
         {
-            rem=a[i]-target;
-            for(int j=i+1;j<a.length-1;j++)
+
+            rem=target-a[i];
+            System.out.println("for i "+i+ " rem no to find is "+rem);
+            for(int j=i+1;j<a.length;j++)
             {
                 if(a[j]==rem)
                 {
-                    l.add(rem);
+                    System.out.println("rem value matching at j "+j +" " + rem);
+                    l.add(a[i]);
                     l.add(a[j]);
+                    l2.add(l);
+                    //l.removeAll(new ArrayList<>(l));
+                    l=new ArrayList<>();
+
                 }
             }
+           // l2.add(l);
         }
 
-        return l;
+
+        return l2;
 
     }
 
@@ -35,9 +46,16 @@ public class main2 {
     }
     public static void main(String[] args) {
 
-     int[] c={1,2,3,4,5};
+     int[] c={5, 3, 9, 2, 8, 4, 7};
 
-     int[] d=findpairs(c,4);
+        List<List<Integer>> d=findpairs(c,10);
+
+        for(List<Integer> l:d)
+        {
+            System.out.println(l);
+        }
+
+
 
     }
 }
