@@ -1,3 +1,5 @@
+type of ques asked and aproach to solve in diff question 
+
 strategy for for loop 
 
 1. simple for loop 
@@ -5,4 +7,60 @@ strategy for for loop
 2. when inner loop start with value of i 
 
 3- have another array which is made true and then on this condition , somethong checked or this array made 
-true based on some codiiton 
+true based on some codiiton  
+
+while loop 
+
+1. index is updated
+
+2, when true is while condition 
+
+3.some counter , on which while condiiton is based 
+
+
+Arrays 
+
+1.
+
+
+
+string 
+
+
+matrix 
+
+
+recusrion 
+
+
+dynamic programming 
+
+
+map 
+
+
+set 
+
+
+list 
+
+
+exception 
+
+
+inheritance
+
+
+interface 
+
+
+
+stack 
+
+
+queue 
+
+
+file operation 
+
+
