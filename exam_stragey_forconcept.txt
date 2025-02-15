@@ -1,0 +1,8 @@
+strategy for for loop 
+
+1. simple for loop 
+
+2. when inner loop start with value of i 
+
+3- have another array which is made true and then on this condition , somethong checked or this array made 
+true based on some codiiton 
