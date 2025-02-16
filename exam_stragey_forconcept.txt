@@ -25,6 +25,22 @@ basic concept
 5.(int) (Math.random() * 2)
 
 
+6. Math.random() generates a double between 0.0 (inclusive) and 1.0 (exclusive).
+
+7.math.abs,Math.round, 
+
+8.double num = 4.3;
+double ceilValue = Math.ceil(num);  // Output: 5.0
+double floorValue = Math.floor(num);
+
+9.indexof(t,index) --also can use from which pos u want . lastindex(t,index), before index 
+
+
+10.List<String> fruits = List.of("Apple", "Banana", "Cherry"); --List.of() creates an immutable list
+
+11.Arrays.asList(), This method converts an array into a fixed-size list.allows modification 
+
+
 
 strategy for for loop 
 
@@ -101,6 +117,18 @@ recusrion
 
 1. in base index of array and string should be less than leght of string or array, string should not be empty
 
+2.Base Case: When the array is empty or has only one element left to process
+
+3.  if (index >= arr.length) {return 0;}
+
+4.    if (s.isEmpty() || s.length() == 1) {return s;}
+
+5.the base case often involves reaching the end of both arrays.Both arrays are empty or have reached their end, meaning they are equal. 
+Or, if at any point elements differ, return false.
+
+6. if (index == arr1.length && index == arr2.length) {return true;}
+
+7.Base Case: When the substring is empty, or one string is exhausted. 
 
 
 dynamic programming 
