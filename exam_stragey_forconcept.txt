@@ -72,6 +72,10 @@ if (str1.charAt(i) != str2.charAt(i)) {
 
 10. comparing string length , if 2 string same lenght , its being empty could be in base case 
 
+ if (index > str.length() - 3) { --when finding substring in another string .
+            return 0;
+        }
+
 
 matrix 
 
@@ -134,7 +138,12 @@ exception sometimes  or reading a file doing the same thing for each line
 
 
 
-8.
+8. when asked that certain list of LinkedList<>() or mentioned in ques, implement in that way when initlizing lik 
+numberList = new LinkedList<>(); ,would be same for other cllection 
+
+9. sometimes variable would be stored in diff type like list but in another method , pased as int array , so in that case
+call another method to convert list into array 
+
 
 exception 
 
