@@ -13,6 +13,8 @@ basic concept
 
 1.(Object)d.getClass().getSimpleName() to know variable data type 
 
+2. private Object array [] = new Object [length]; any variable can be of object type 
+
 
 strategy for for loop 
 
@@ -149,6 +151,11 @@ call another method to convert list into array
 reduced . sometimes interface would be there but you have to think how to use , like in case of ticketing , useticket , means one trip 
 so reduce nooftripsleft when >0 , so if some counter , also check when its >0 , and using returntrips method , just return 
 this value.
+
+11. Quadrilateral  qlRef  = new Parallelogram(a,b,c);  if ( qlRef instanceof Parallelogram ) 
+pgRef = (Parallelogram) qlRef;} instance of is with new paralleogram not the reference type 
+
+
 
 
 exception 
