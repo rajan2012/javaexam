@@ -1,4 +1,18 @@
-type of ques asked and aproach to solve in diff question 
+type of ques asked and aproach to solve in diff question , approach for diff type of ques , concept
+
+
+in exam , not much time to think, you should what should be correct exact apprach , no mistake , should know how to solve 
+question exaclty 
+
+ask basic and normal ques using this 
+--give me some of the complex  matrix  problem to solve in java , which also clear my concept, give me code 
+
+##################################################################################################################
+
+basic concept 
+
+1.(Object)d.getClass().getSimpleName() to know variable data type 
+
 
 strategy for for loop 
 
@@ -9,6 +23,9 @@ strategy for for loop
 3- have another array which is made true and then on this condition , somethong checked or this array made 
 true based on some codiiton  
 
+4. use of math.max and min , math.floor ,math.abs 
+
+
 while loop 
 
 1. index is updated
@@ -17,20 +34,61 @@ while loop
 
 3.some counter , on which while condiiton is based 
 
+4. long (n*n) where n is int 
 
 Arrays 
 
-1.
+1.dynamic arrays 
+with size counter, feeding element to array , suppose array has 100 lenght but adding elem in array based on 
+this index counter 
+
+
 
 
 
 string 
 
+1. use contains to check some symbol 
+
+2. use startwith and endwith to check if substring present in string, can be used in recusrion 
+
+3.charat, matches , 
+
+4.compare 2 string parallel, comparing adjacent character in same string 
+
+if (str1.charAt(i) != str2.charAt(i)) {
+
+5. replace or replaceall 
+
+6.finding count of char in another string, is also , use while(index){increment index and count,till its -1}
+
+7.   String d=String.join(" ",s2[0],s2[1]); System.out.println(d);  result is "pizza hawai"
+
+8.string.join is opp of split where different string is joined by delimeter, which is first arg of string.join 
+
+
+9. same to do with stringbuilder sb.append(str1).append(" ").append(str2);String result = sb.toString();
+
+
+10. comparing string length , if 2 string same lenght , its being empty could be in base case 
+
+ if (index > str.length() - 3) { --when finding substring in another string .
+            return 0;
+        }
+
 
 matrix 
 
+1.when asked to find avg across each row, divide by no of col and vice versa 
+
+2.if sum across each row, cal sum for each row and then out of inner loop, add into some collection, if index required 
+that too.
+
 
 recusrion 
+
+1. in base index of array and string should be less than leght of string or array, string should not be empty
+
 
 
 dynamic programming 
@@ -38,11 +96,59 @@ dynamic programming
 
 map 
 
+for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+System.out.println(entry.getKey() + ": " + entry.getValue());
 
 set 
 
 
 list 
+
+
+
+1.String reversedLine = new StringBuilder(line).reverse().toString(); -- directly reversing string using list functio 
+
+2. List.of(1, 2, 3, 4, 5);
+
+
+
+class 
+
+1.after split in string array, may be u need to parse some part , create new object out of these variable 
+
+2.when said 2 variable of any data type ,then for example left is of l type, right is of r type.
+
+
+3. class Tuple<L, R> define and then when calling double squareDiv(Tuple<Integer, Integer> tuple) 
+
+4.in one method , u declare a local variable and then return nothing, in this method ,just add this local into the class
+
+variable like  Movie movie = new Movie(title, genres);
+        movies.add(movie); in addmovie method ,in this  movies, is instance of object.
+
+
+5. second , u return list or map and in this case , map is returned,
+
+6. Pizza Hawaii  10.50 . the first 2 can be stored in string using string.join(" ",stringbiulder or list) 
+
+you can also simply concat first 2 parts[0] + " " + parts[1]; 
+
+7. they ask where they send string line to constructor , and then we have to parse it , create new object, throws 
+exception sometimes  or reading a file doing the same thing for each line 
+
+
+
+8. when asked that certain list of LinkedList<>() or mentioned in ques, implement in that way when initlizing lik 
+numberList = new LinkedList<>(); ,would be same for other cllection 
+
+9. sometimes variable would be stored in diff type like list but in another method , pased as int array , so in that case
+call another method to convert list into array 
+
+
+10. when sid how many trips left, a variable is there which is initlized with some number and on each calling, its value get 
+reduced . sometimes interface would be there but you have to think how to use , like in case of ticketing , useticket , means one trip 
+so reduce nooftripsleft when >0 , so if some counter , also check when its >0 , and using returntrips method , just return 
+this value.
 
 
 exception 
@@ -53,7 +159,7 @@ inheritance
 
 interface 
 
-
+1.interface Container<T>
 
 stack 
 
@@ -64,3 +170,12 @@ queue
 file operation 
 
 
+1.use File file = new File("sample.txt"); and then BufferedReader br = new BufferedReader(new FileReader(file)))
+ when file is not in same directory 
+
+2. use of try () catch{}
+
+3.  try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) when we want to append file 
+
+4. catch (IOException e) {
+            e.printStackTrace();
