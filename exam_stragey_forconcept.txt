@@ -208,12 +208,25 @@ interface
 
 stack 
 
+1.if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/"))
+
+2.while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
+int index = stack.pop();  comparing elem with top of stack elem, this can be done with 
+queue where peek can be used and then normal java cal can be done
+
+
+
 
 queue 
 
 1.when linkedlist imp , use while(posiiton!=null)
 
 2.when array , then  while (i != free); , use of free, front, rear ,arr[]
+
+
+3.for circular queue, we have size and capacity . u maintain size++ or -- in enqueue and dequeue to track size of
+queue.
+
 
 file operation 
 
@@ -227,3 +240,15 @@ file operation
 
 4. catch (IOException e) {
             e.printStackTrace();
+
+5.list<String> is given by using path.readalllines- then need to run over loop 
+similar approache when after while loop when using bufferreader 
+after that parsing , split , new object can be created .
+
+6.then we can work on new list to anaylze data and write or print data as in av,min,max price problem 
+
+7.   reader.close();   writer.close();
+
+8.after getting line of file , then each line will be string and same problem can be asked as asked for string and 
+class problem 
+
