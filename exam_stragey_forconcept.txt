@@ -11,7 +11,7 @@ ask basic and normal ques using this
 
 basic concept 
 
-
+1.(Object)d.getClass().getSimpleName() to know variable data type 
 
 
 strategy for for loop 
@@ -62,6 +62,16 @@ if (str1.charAt(i) != str2.charAt(i)) {
 
 6.finding count of char in another string, is also , use while(index){increment index and count,till its -1}
 
+7.   String d=String.join(" ",s2[0],s2[1]); System.out.println(d);  result is "pizza hawai"
+
+8.string.join is opp of split where different string is joined by delimeter, which is first arg of string.join 
+
+
+9. same to do with stringbuilder sb.append(str1).append(" ").append(str2);String result = sb.toString();
+
+
+10. comparing string length , if 2 string same lenght , its being empty could be in base case 
+
 
 matrix 
 
@@ -91,7 +101,11 @@ set
 list 
 
 
+
 1.String reversedLine = new StringBuilder(line).reverse().toString(); -- directly reversing string using list functio 
+
+2. List.of(1, 2, 3, 4, 5);
+
 
 
 class 
@@ -117,6 +131,8 @@ you can also simply concat first 2 parts[0] + " " + parts[1];
 
 7. they ask where they send string line to constructor , and then we have to parse it , create new object, throws 
 exception sometimes  or reading a file doing the same thing for each line 
+
+
 
 8.
 

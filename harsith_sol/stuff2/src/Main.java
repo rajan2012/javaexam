@@ -3,11 +3,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        String s="Streetname 12 1234 City";
+      String s ="pizza hawai 10.2";
 
-        String[] s1=s.split(",");
+      String[] s2=s.split("\\s+");
 
-        System.out.println(s1.length);
+      for(String a:s2) {
+          System.out.println(a);
+      }
+
+      String d=String.join(" ",s2[0],s2[1]);
+
+        System.out.println((Object)d.getClass().getSimpleName());
+
+
+
+
 
 
         }
