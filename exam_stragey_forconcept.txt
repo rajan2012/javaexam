@@ -15,6 +15,16 @@ basic concept
 
 2. private Object array [] = new Object [length]; any variable can be of object type 
 
+3. private Object array[] = new Object[length]; and private Object[] array = new Object[length]; both are valid 
+
+
+4.(Integer)obj;
+
+5.  d = a >>> 2;
+
+5.(int) (Math.random() * 2)
+
+
 
 strategy for for loop 
 
@@ -173,6 +183,9 @@ stack
 
 queue 
 
+1.when linkedlist imp , use while(posiiton!=null)
+
+2.when array , then  while (i != free); , use of free, front, rear ,arr[]
 
 file operation 
 
