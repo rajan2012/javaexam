@@ -145,6 +145,12 @@ numberList = new LinkedList<>(); ,would be same for other cllection
 call another method to convert list into array 
 
 
+10. when sid how many trips left, a variable is there which is initlized with some number and on each calling, its value get 
+reduced . sometimes interface would be there but you have to think how to use , like in case of ticketing , useticket , means one trip 
+so reduce nooftripsleft when >0 , so if some counter , also check when its >0 , and using returntrips method , just return 
+this value.
+
+
 exception 
 
 
