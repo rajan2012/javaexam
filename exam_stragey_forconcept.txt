@@ -48,11 +48,33 @@ this index counter
 
 string 
 
+1. use contains to check some symbol 
+
+2. use startwith and endwith to check if substring present in string, can be used in recusrion 
+
+3.charat, matches , 
+
+4.compare 2 string parallel, comparing adjacent character in same string 
+
+if (str1.charAt(i) != str2.charAt(i)) {
+
+5. replace or replaceall 
+
+6.finding count of char in another string, is also , use while(index){increment index and count,till its -1}
+
 
 matrix 
 
+1.when asked to find avg across each row, divide by no of col and vice versa 
+
+2.if sum across each row, cal sum for each row and then out of inner loop, add into some collection, if index required 
+that too.
+
 
 recusrion 
+
+1. in base index of array and string should be less than leght of string or array, string should not be empty
+
 
 
 dynamic programming 
@@ -72,6 +94,32 @@ list
 1.String reversedLine = new StringBuilder(line).reverse().toString(); -- directly reversing string using list functio 
 
 
+class 
+
+1.after split in string array, may be u need to parse some part , create new object out of these variable 
+
+2.when said 2 variable of any data type ,then for example left is of l type, right is of r type.
+
+
+3. class Tuple<L, R> define and then when calling double squareDiv(Tuple<Integer, Integer> tuple) 
+
+4.in one method , u declare a local variable and then return nothing, in this method ,just add this local into the class
+
+variable like  Movie movie = new Movie(title, genres);
+        movies.add(movie); in addmovie method ,in this  movies, is instance of object.
+
+
+5. second , u return list or map and in this case , map is returned,
+
+6. Pizza Hawaii  10.50 . the first 2 can be stored in string using string.join(" ",stringbiulder or list) 
+
+you can also simply concat first 2 parts[0] + " " + parts[1]; 
+
+7. they ask where they send string line to constructor , and then we have to parse it , create new object, throws 
+exception sometimes  or reading a file doing the same thing for each line 
+
+8.
+
 exception 
 
 
@@ -80,7 +128,7 @@ inheritance
 
 interface 
 
-
+1.interface Container<T>
 
 stack 
 
