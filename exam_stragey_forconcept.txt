@@ -40,7 +40,10 @@ double floorValue = Math.floor(num);
 
 11.Arrays.asList(), This method converts an array into a fixed-size list.allows modification 
 
+12. Integer.parseInt(str);  Integer.toString(number); --converting diff datatype to given type or converting string 
+to other datatype.
 
+13.String.valueOf() --convert diff type to string and Integer.valueOf()--convert string to other 
 
 strategy for for loop 
 
@@ -104,6 +107,15 @@ if (str1.charAt(i) != str2.charAt(i)) {
             return 0;
         }
 
+11.when comparing 2 string , if to find count of each char , may be comparison of previous one with current index 
+and add last string to string.
+
+
+12, before sorting , string converted into chararray, char[] sArray = s.toCharArray(); Arrays.sort(sArray);
+
+13.StringBuilder has an append(int i) method. This method converts the integer to its string representation and appends it to the StringBuilder.
+
+14.String sortedString = new String(chars);  // Converting back to String --convert char to string 
 
 matrix 
 
@@ -217,6 +229,7 @@ queue where peek can be used and then normal java cal can be done
 
 
 
+
 queue 
 
 1.when linkedlist imp , use while(posiiton!=null)
@@ -226,6 +239,12 @@ queue
 
 3.for circular queue, we have size and capacity . u maintain size++ or -- in enqueue and dequeue to track size of
 queue.
+
+
+linked list 
+
+1.when finding reverse of linkedlist ,use , prev=null, current and next pointer in(while c!=null)
+
 
 
 file operation 
