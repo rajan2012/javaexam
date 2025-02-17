@@ -32,6 +32,7 @@ public class exception1 {
         for (int i = 1; i < parts.length - 1; i++) {
             name += " " + parts[i];
         }
+
         String priceAsString = parts[parts.length - 1];
 
         // Attempt to parse price as a double

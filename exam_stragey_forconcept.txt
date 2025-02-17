@@ -94,6 +94,8 @@ is value of digit and letter, very efficient way to solve these kind of problems
 
 @ using directly , when inside "" thne use \\. else if regular expression just \.
 
+\\d+(\\.\\d+)? --grouping 2 into 1 , () can be used for grouping 
+
 27. special characters like ., +, *, ?, and others have specific meanings,
 
 28.Inside [], characters are treated as literal characters unless they are specifically reserved for use in a character class (e.g., - for a range).
@@ -254,6 +256,19 @@ and add last string to string.
 15.freq[c - '0' + 26]++;  freq[c - 'a']++;// Shift to index range 26-35 for digits  , heere first 26 is covered by letters 
 so using this concept very imp . 
 
+16. using             if (main.startsWith(search, i)) { to check if some char exist, can also index help can be taken 
+
+17. sb.append(str1.charAt(i)).append(str2.charAt(i));- can be used to add char in way we want , adding diff logic 
+
+
+18.  if (parts.length < 2) {- after splitting a line with split, sometimes check its size , sometimes , change datatype 
+before storing in appropiate variable .
+
+   for (int i = 1; i < parts.length - 1; i++) {
+            name += " " + parts[i];
+        }  ##except last part, concatenating everyting into one 
+
+
 matrix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.when asked to find avg across each row, divide by no of col and vice versa 
@@ -261,7 +276,10 @@ matrix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 2.if sum across each row, cal sum for each row and then out of inner loop, add into some collection, if index required 
 that too.
 
-3.
+3.count++; keeping this variable to count no of element in each row, so that can be used to cal avergae , by dividng sum 
+
+4. maxtempmonth = i+1; sometimes to display like month , increment i since i start with 0 but there is no zero month 
+
 
 recusrion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -281,6 +299,7 @@ Or, if at any point elements differ, return false.
 7.Base Case: When the substring is empty, or one string is exhausted. 
 
 
+
 dynamic programming %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -288,6 +307,10 @@ map %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
 System.out.println(entry.getKey() + ": " + entry.getValue());
+
+1. when need to update key content or want to check if its there , use   if(records.containsKey(name)){. containsKey and 
+containsValue. like update best time ,after comparing , like this what we did with array .
+         
 
 set %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -303,6 +326,10 @@ list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 class %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sometimes variable can be of  private Object key; private Object value;
+
+either use like this  for (Sample sample : samples) { or in for loop of (int j=0;......)
 
 1.after split in string array, may be u need to parse some part , create new object out of these variable 
 
@@ -343,11 +370,67 @@ this value.
 11. Quadrilateral  qlRef  = new Parallelogram(a,b,c);  if ( qlRef instanceof Parallelogram ) 
 pgRef = (Parallelogram) qlRef;} instance of is with new paralleogram not the reference type 
 
+12. when we have to throw exception for some variable in class, first throw that exception and then assign value 
 
+ if(age<18)
+    {
+        throw new IllegalArgumentException("age must be more than 18");
+    }
+    this.age=age;
+
+13.when new element is asked to get added to array , find first position where its null , then add new object/new value and then
+break away from that loop. 
+
+14.when asked to find least or max object  with price or points, use similar logic which u choose for array problem 
+,here first elem of array is considered or null like Entry leastLearned = entries[0];
+
+
+15. in another class calling entry.toString() in tostrig ,to print all content of other class. 
+
+16. sometimes passing this in constructor to intialize some other variables or in some method  supervisor.addAssistant(this);
+
+17. sometimes , need to add elem till certain number like professor can have at most 10 assistant then add till it reaches 9 
+ if (assistants.size() < 10) {
+            assistants.add(assistant);
+        }
+
+18. System.exit(0);  Room: " + (room != null ? room : "N/A")  calling to consider which one to choose 
+
+19. throw new NotComparableException(this);
+        }
+return Double.compare(this.weight, pet.weight);
+
+
+20. sometimes in custom exceptin , a message is stored based on if condition and another method which return this message 
+ public String getErrMsg() {
+        return this.message;
+    }
+
+21. collectedPosts.add(posts.get(i)); -adding into another coll after fetching some index 
+
+22. return hasDigit && hasAlpha && hasSpecial; - using diff cond to come to conclusion 
+
+23. either this way for(int i=0;i< learnedwords.length;i++){
+
+      if(learnedwords[i] == null){
+         learnedwords[i] = newWord;
+         break;
+      } or for(int i=0;i< learnedwords.length;i++){
+
+      
+         learnedwords[size++] = newWord;
+         break;
+      }
+
+      if(learnedwords[i] != null){ ##to get count of array 
+        count++;
+      }
 
 
 exception %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+1.super(message) inside custom exceotion constructor 
 
 inheritance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -406,4 +489,15 @@ after that parsing , split , new object can be created .
 
 8.after getting line of file , then each line will be string and same problem can be asked as asked for string and 
 class problem 
+
+
+9. either BufferedReader b=new BufferedReader(new FileReader(filename)); or first File f= new File(filename);
+
+10.The reason is that Files.write(Path, List<String>) automatically writes each element of the list as a
+ separate line in the file. It handles the loop internally, joining the strings with the system's line separator.
+
+11.   } catch (IOException e) {
+            e.printStackTrace();
+        } or e.getmessage()
+
 
