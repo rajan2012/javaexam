@@ -151,7 +151,26 @@ startsWith (String prefix, int index).
 33.int frequency[] = new int[ 8 ]; frequency [ 1 + (int) ( Math.random() * 6 ) ] ++; again storing info using index of 
 arrays
 
-strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+34.public static <T extends Comparable<T> >
+4 T maximum( T x, T y, T z ){
+
+35.class name<T1, T2, ..., Tn> ... {...}
+
+in generic GenericStack < Double >, Double instead of double 
+
+Vector corresponds to ArrayList, but is synchronized (suitable
+for accessing from concurrent threads).  EnumMap 
+
+
+sum (i1, i2, i3, i4); -variable number of parameters of the same type
+
+[a-z&&[def]] intersection (corresponds to [def])
+
+36. \s — a ‘whitespace’ character: [ \t\n\x0B\f\r]
+
+
+strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. simple for loop 
 
@@ -336,6 +355,8 @@ stack %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 2.while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
 int index = stack.pop();  comparing elem with top of stack elem, this can be done with 
 queue where peek can be used and then normal java cal can be done
+
+{elements[++top] = value;}  return elements[top--];
 
 queue  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
