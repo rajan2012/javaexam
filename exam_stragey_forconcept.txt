@@ -1,5 +1,8 @@
 type of ques asked and aproach to solve in diff question , approach for diff type of ques , concept
 
+1.open 2 intellig tab , one for basic to check if part of logic working or not or to find right logic 
+
+2.2nd do actual exam ques in that 
 
 in exam , not much time to think, you should what should be correct exact apprach , no mistake , should know how to solve 
 question exaclty 
@@ -9,7 +12,7 @@ ask basic and normal ques using this
 
 ##################################################################################################################
 
-basic concept 
+basic concept  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.(Object)d.getClass().getSimpleName() to know variable data type 
 
@@ -45,7 +48,137 @@ to other datatype.
 
 13.String.valueOf() --convert diff type to string and Integer.valueOf()--convert string to other 
 
-strategy for for loop 
+
+14.generic class can be used to have ur own custom collection like keypair or tuple 
+its own method, 
+
+
+15.interface Pair<K, V> { and class KeyValue<K, V> implements Pair<K, V> {
+
+
+16.(char) (ch - shift)   ,   (char) ('A' + (ch - 'A' + shift) % 26);
+
+
+17.  map.putIfAbsent(sorted, new ArrayList<>());  map.get(sorted).add(s);  -when grouping same anagrams together 
+
+18. result.append(String.valueOf(currentChar).repeat(count)); when same char need to be repeated 
+
+19.new String(charArray)- to convert char to string . 
+
+20. new String[]{charArray} -- to create string array. String[] strArray = new String[]{"hello", "world"};
+
+char[] letters = new char[]{'a', 'b', 'c'};  sum += (int) ch; // Convert char to ASCII value
+
+   int num = ch - '0'; // Convert char digit to int,  char letter = (char) (num + 96); // Get corresponding letter
+
+
+21.In Java, ch is a char, and 0 is an int. So, the char is implicitly promoted to an int, leading to the ASCII value of ch being used
+
+22. use ch - 'a' to have array of 26 digit , use (char)(ch+shift) where shift is integer so , its added to ascii value of ch , so shifting char 
+ch-'0' when ch is of digit type and u want the actual value of ch in terms of int and storing in int .
+
+23. for digit problem    while (num > 0) {
+            int lastDigit = num % 10;
+            reversed = reversed * 10 + lastDigit;
+            num /= 10;
+        }
+
+
+24. one way to check if string or number is palindromic or not is to check itself with its reversal
+
+25.int[] frequency = new int[10]; and frequency[digit]++;, likewise for having count of each char in string , here index
+is value of digit and letter, very efficient way to solve these kind of problems.
+
+
+26.for regular expression ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ 
+
+@ using directly , when inside "" thne use \\. else if regular expression just \.
+
+27. special characters like ., +, *, ?, and others have specific meanings,
+
+28.Inside [], characters are treated as literal characters unless they are specifically reserved for use in a character class (e.g., - for a range).
+
+for - we use \- inside [] too
+
+String regex = "[A-Za-z0-9+._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"; ,here \\. used instead of just \. since insde "".
+
+29.[A-Za-z0-9.-] is because the hyphen (-) is treated as a literal character when placed at the beginning or end of a character class. It only has special meaning when placed between other characters
+ in the class (which is used to define a range)
+
+
+30. extract digit from string 
+
+ while (matcher.find()) {
+            result.append(matcher.group());
+        }
+
+replaceAll("[^A-Za-z0-9]"-removing alphanumeric character 
+
+Use \\s+ to match one or more whitespace characters 
+
+31.you want to match the literal parenthesis character ( (or )), you need to escape it with a backslash \\
+since it is used as grouping (). 
+
+\w equivalent to  [A-Za-z0-9_]
+
+String regex = "abc|def";  // Match either "abc" or "def"
+
+String regex = "[a-zA-Z0-9]";  // Match any letter or digit -not more than 1 letter or digit, "abc123".matches(regex));  // false
+
+// Regex: [ ,;] means "split on a space, comma, or semicolon"
+String[] result = input.split("[ ,;]+");
+
+
+String reversed = new StringBuilder(cleaned)- can be initialized with some value
+
+public enum Color {
+    RED, GREEN, BLUE
+}   Color color1 = Color.RED;
+
+ for (Day day : Day.values()) {
+            System.out.println(day);
+        }
+
+
+30. reversing digit in string using stringbuilder reversedDigits.insert(0, c); , this insert function 
+
+31.The continue keyword in Java is used to skip the current iteration of a loop and move directly to the next iteration
+
+startsWith (String prefix, int index).  
+
+32. use of left, right counter on both side of string to compare char and then left++, right -- .
+
+33.int frequency[] = new int[ 8 ]; frequency [ 1 + (int) ( Math.random() * 6 ) ] ++; again storing info using index of 
+arrays
+
+
+34.public static <T extends Comparable<T> >
+4 T maximum( T x, T y, T z ){
+
+35.class name<T1, T2, ..., Tn> ... {...}
+
+in generic GenericStack < Double >, Double instead of double 
+
+Vector corresponds to ArrayList, but is synchronized (suitable
+for accessing from concurrent threads).  EnumMap 
+
+
+sum (i1, i2, i3, i4); -variable number of parameters of the same type
+
+[a-z&&[def]] intersection (corresponds to [def])
+
+36. \s — a ‘whitespace’ character: [ \t\n\x0B\f\r]
+
+retainAll-It is used to retain only the elements that are present in both the current collection and the specified collection
+
+37. delete and deleteCharAt-method of stringbuilder. 
+
+public void setCharAt (int index, char ch)
+ / / replaces a character at the given position
+
+
+
+strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. simple for loop 
 
@@ -57,7 +190,7 @@ true based on some codiiton
 4. use of math.max and min , math.floor ,math.abs 
 
 
-while loop 
+while loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. index is updated
 
@@ -67,7 +200,7 @@ while loop
 
 4. long (n*n) where n is int 
 
-Arrays 
+Arrays #########################################&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.dynamic arrays 
 with size counter, feeding element to array , suppose array has 100 lenght but adding elem in array based on 
@@ -77,7 +210,7 @@ this index counter
 
 
 
-string 
+string %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. use contains to check some symbol 
 
@@ -117,15 +250,20 @@ and add last string to string.
 
 14.String sortedString = new String(chars);  // Converting back to String --convert char to string 
 
-matrix 
+
+15.freq[c - '0' + 26]++;  freq[c - 'a']++;// Shift to index range 26-35 for digits  , heere first 26 is covered by letters 
+so using this concept very imp . 
+
+matrix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.when asked to find avg across each row, divide by no of col and vice versa 
 
 2.if sum across each row, cal sum for each row and then out of inner loop, add into some collection, if index required 
 that too.
 
+3.
 
-recusrion 
+recusrion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. in base index of array and string should be less than leght of string or array, string should not be empty
 
@@ -143,18 +281,18 @@ Or, if at any point elements differ, return false.
 7.Base Case: When the substring is empty, or one string is exhausted. 
 
 
-dynamic programming 
+dynamic programming %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-map 
+map %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
 System.out.println(entry.getKey() + ": " + entry.getValue());
 
-set 
+set %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-list 
+list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -164,7 +302,7 @@ list
 
 
 
-class 
+class %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.after split in string array, may be u need to parse some part , create new object out of these variable 
 
@@ -208,17 +346,17 @@ pgRef = (Parallelogram) qlRef;} instance of is with new paralleogram not the re
 
 
 
-exception 
+exception %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-inheritance
+inheritance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-interface 
+interface  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.interface Container<T>
 
-stack 
+stack %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/"))
 
@@ -226,11 +364,9 @@ stack
 int index = stack.pop();  comparing elem with top of stack elem, this can be done with 
 queue where peek can be used and then normal java cal can be done
 
+{elements[++top] = value;}  return elements[top--];
 
-
-
-
-queue 
+queue  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.when linkedlist imp , use while(posiiton!=null)
 
@@ -241,13 +377,13 @@ queue
 queue.
 
 
-linked list 
+linked list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.when finding reverse of linkedlist ,use , prev=null, current and next pointer in(while c!=null)
 
 
 
-file operation 
+file operation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 1.use File file = new File("sample.txt"); and then BufferedReader br = new BufferedReader(new FileReader(file)))
