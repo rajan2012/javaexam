@@ -87,6 +87,22 @@ ch-'0' when ch is of digit type and u want the actual value of ch in terms of in
 is value of digit and letter, very efficient way to solve these kind of problems.
 
 
+26.for regular expression ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ 
+
+@ using directly , when inside "" thne use \\. else if regular expression just \.
+
+27. special characters like ., +, *, ?, and others have specific meanings,
+
+28.Inside [], characters are treated as literal characters unless they are specifically reserved for use in a character class (e.g., - for a range).
+
+for - we use \- inside [] too
+
+String regex = "[A-Za-z0-9+._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"; ,here \\. used instead of just \. since insde "".
+
+29.[A-Za-z0-9.-] is because the hyphen (-) is treated as a literal character when placed at the beginning or end of a character class. It only has special meaning when placed between other characters
+ in the class (which is used to define a range)
+
+
 
 strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
