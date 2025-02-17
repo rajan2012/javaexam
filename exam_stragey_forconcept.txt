@@ -367,12 +367,24 @@ break away from that loop.
             assistants.add(assistant);
         }
 
-18. System.exit(0);
+18. System.exit(0);  Room: " + (room != null ? room : "N/A")  calling to consider which one to choose 
+
+19. throw new NotComparableException(this);
+        }
+return Double.compare(this.weight, pet.weight);
+
+
+20. sometimes in custom exceptin , a message is stored based on if condition and another method which return this message 
+ public String getErrMsg() {
+        return this.message;
+    }
 
 
 
 exception %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+1.super(message) inside custom exceotion constructor 
 
 inheritance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -432,3 +444,12 @@ after that parsing , split , new object can be created .
 8.after getting line of file , then each line will be string and same problem can be asked as asked for string and 
 class problem 
 
+
+9. either BufferedReader b=new BufferedReader(new FileReader(filename)); or first File f= new File(filename);
+
+10.The reason is that Files.write(Path, List<String>) automatically writes each element of the list as a
+ separate line in the file. It handles the loop internally, joining the strings with the system's line separator.
+
+11.   } catch (IOException e) {
+            e.printStackTrace();
+        } or e.getmessage()
