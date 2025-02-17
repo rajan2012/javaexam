@@ -9,7 +9,7 @@ ask basic and normal ques using this
 
 ##################################################################################################################
 
-basic concept 
+basic concept  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.(Object)d.getClass().getSimpleName() to know variable data type 
 
@@ -45,7 +45,50 @@ to other datatype.
 
 13.String.valueOf() --convert diff type to string and Integer.valueOf()--convert string to other 
 
-strategy for for loop 
+
+14.generic class can be used to have ur own custom collection like keypair or tuple 
+its own method, 
+
+
+15.interface Pair<K, V> { and class KeyValue<K, V> implements Pair<K, V> {
+
+
+16.(char) (ch - shift)   ,   (char) ('A' + (ch - 'A' + shift) % 26);
+
+
+17.  map.putIfAbsent(sorted, new ArrayList<>());  map.get(sorted).add(s);  -when grouping same anagrams together 
+
+18. result.append(String.valueOf(currentChar).repeat(count)); when same char need to be repeated 
+
+19.new String(charArray)- to convert char to string . 
+
+20. new String[]{charArray} -- to create string array. String[] strArray = new String[]{"hello", "world"};
+
+char[] letters = new char[]{'a', 'b', 'c'};  sum += (int) ch; // Convert char to ASCII value
+
+   int num = ch - '0'; // Convert char digit to int,  char letter = (char) (num + 96); // Get corresponding letter
+
+
+21.In Java, ch is a char, and 0 is an int. So, the char is implicitly promoted to an int, leading to the ASCII value of ch being used
+
+22. use ch - 'a' to have array of 26 digit , use (char)(ch+shift) where shift is integer so , its added to ascii value of ch , so shifting char 
+ch-'0' when ch is of digit type and u want the actual value of ch in terms of int and storing in int .
+
+23. for digit problem    while (num > 0) {
+            int lastDigit = num % 10;
+            reversed = reversed * 10 + lastDigit;
+            num /= 10;
+        }
+
+
+24. one way to check if string or number is palindromic or not is to check itself with its reversal
+
+25.int[] frequency = new int[10]; and frequency[digit]++;, likewise for having count of each char in string , here index
+is value of digit and letter, very efficient way to solve these kind of problems.
+
+
+
+strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. simple for loop 
 
@@ -57,7 +100,7 @@ true based on some codiiton
 4. use of math.max and min , math.floor ,math.abs 
 
 
-while loop 
+while loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. index is updated
 
