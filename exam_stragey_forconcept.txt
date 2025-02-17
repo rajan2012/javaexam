@@ -261,7 +261,9 @@ matrix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 2.if sum across each row, cal sum for each row and then out of inner loop, add into some collection, if index required 
 that too.
 
-3.
+3.count++; keeping this variable to count no of element in each row, so that can be used to cal avergae , by dividng sum 
+
+4. maxtempmonth = i+1; sometimes to display like month , increment i since i start with 0 but there is no zero month 
 
 recusrion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -303,6 +305,8 @@ list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 class %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+sometimes variable can be of  private Object key; private Object value;
 
 1.after split in string array, may be u need to parse some part , create new object out of these variable 
 
@@ -379,6 +383,25 @@ return Double.compare(this.weight, pet.weight);
         return this.message;
     }
 
+21. collectedPosts.add(posts.get(i)); -adding into another coll after fetching some index 
+
+22. return hasDigit && hasAlpha && hasSpecial; - using diff cond to come to conclusion 
+
+23. either this way for(int i=0;i< learnedwords.length;i++){
+
+      if(learnedwords[i] == null){
+         learnedwords[i] = newWord;
+         break;
+      } or for(int i=0;i< learnedwords.length;i++){
+
+      
+         learnedwords[size++] = newWord;
+         break;
+      }
+
+      if(learnedwords[i] != null){ ##to get count of array 
+        count++;
+      }
 
 
 exception %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
