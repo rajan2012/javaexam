@@ -169,6 +169,14 @@ sum (i1, i2, i3, i4); -variable number of parameters of the same type
 
 36. \s — a ‘whitespace’ character: [ \t\n\x0B\f\r]
 
+retainAll-It is used to retain only the elements that are present in both the current collection and the specified collection
+
+37. delete and deleteCharAt-method of stringbuilder. 
+
+public void setCharAt (int index, char ch)
+ / / replaces a character at the given position
+
+
 
 strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
