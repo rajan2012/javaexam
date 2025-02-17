@@ -343,6 +343,31 @@ this value.
 11. Quadrilateral  qlRef  = new Parallelogram(a,b,c);  if ( qlRef instanceof Parallelogram ) 
 pgRef = (Parallelogram) qlRef;} instance of is with new paralleogram not the reference type 
 
+12. when we have to throw exception for some variable in class, first throw that exception and then assign value 
+
+ if(age<18)
+    {
+        throw new IllegalArgumentException("age must be more than 18");
+    }
+    this.age=age;
+
+13.when new element is asked to get added to array , find first position where its null , then add new object/new value and then
+break away from that loop. 
+
+14.when asked to find least or max object  with price or points, use similar logic which u choose for array problem 
+,here first elem of array is considered or null like Entry leastLearned = entries[0];
+
+
+15. in another class calling entry.toString() in tostrig ,to print all content of other class. 
+
+16. sometimes passing this in constructor to intialize some other variables or in some method  supervisor.addAssistant(this);
+
+17. sometimes , need to add elem till certain number like professor can have at most 10 assistant then add till it reaches 9 
+ if (assistants.size() < 10) {
+            assistants.add(assistant);
+        }
+
+18. System.exit(0);
 
 
 

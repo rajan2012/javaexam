@@ -1,4 +1,5 @@
 public class Assistant extends Staff {
+
     private Professor supervisor;
 
     public Assistant(String firstName, String lastName, String address, String room, String phoneNumber, Professor supervisor) {
