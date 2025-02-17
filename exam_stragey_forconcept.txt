@@ -94,6 +94,8 @@ is value of digit and letter, very efficient way to solve these kind of problems
 
 @ using directly , when inside "" thne use \\. else if regular expression just \.
 
+\\d+(\\.\\d+)? --grouping 2 into 1 , () can be used for grouping 
+
 27. special characters like ., +, *, ?, and others have specific meanings,
 
 28.Inside [], characters are treated as literal characters unless they are specifically reserved for use in a character class (e.g., - for a range).
@@ -254,6 +256,19 @@ and add last string to string.
 15.freq[c - '0' + 26]++;  freq[c - 'a']++;// Shift to index range 26-35 for digits  , heere first 26 is covered by letters 
 so using this concept very imp . 
 
+16. using             if (main.startsWith(search, i)) { to check if some char exist, can also index help can be taken 
+
+17. sb.append(str1.charAt(i)).append(str2.charAt(i));- can be used to add char in way we want , adding diff logic 
+
+
+18.  if (parts.length < 2) {- after splitting a line with split, sometimes check its size , sometimes , change datatype 
+before storing in appropiate variable .
+
+   for (int i = 1; i < parts.length - 1; i++) {
+            name += " " + parts[i];
+        }  ##except last part, concatenating everyting into one 
+
+
 matrix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1.when asked to find avg across each row, divide by no of col and vice versa 
@@ -264,6 +279,7 @@ that too.
 3.count++; keeping this variable to count no of element in each row, so that can be used to cal avergae , by dividng sum 
 
 4. maxtempmonth = i+1; sometimes to display like month , increment i since i start with 0 but there is no zero month 
+
 
 recusrion %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -283,6 +299,7 @@ Or, if at any point elements differ, return false.
 7.Base Case: When the substring is empty, or one string is exhausted. 
 
 
+
 dynamic programming %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -290,6 +307,10 @@ map %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
 System.out.println(entry.getKey() + ": " + entry.getValue());
+
+1. when need to update key content or want to check if its there , use   if(records.containsKey(name)){. containsKey and 
+containsValue. like update best time ,after comparing , like this what we did with array .
+         
 
 set %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -307,6 +328,8 @@ list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 class %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 sometimes variable can be of  private Object key; private Object value;
+
+either use like this  for (Sample sample : samples) { or in for loop of (int j=0;......)
 
 1.after split in string array, may be u need to parse some part , create new object out of these variable 
 
@@ -476,3 +499,5 @@ class problem
 11.   } catch (IOException e) {
             e.printStackTrace();
         } or e.getmessage()
+
+
