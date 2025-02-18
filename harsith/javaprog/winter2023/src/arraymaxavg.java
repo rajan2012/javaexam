@@ -26,6 +26,7 @@ public class arraymaxavg {
 
             }
             double avgtot = sum/temperatures[i].length;
+
             if(avgtot>avg){
 
                 avg = avgtot;

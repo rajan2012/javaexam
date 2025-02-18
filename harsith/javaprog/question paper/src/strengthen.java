@@ -24,7 +24,6 @@ public class strengthen {
 
     public static void main(String[] args){
 
-
         String name = "Hello, this is @name1 and @name2";
         System.out.println(three(name));
 

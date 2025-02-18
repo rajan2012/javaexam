@@ -72,6 +72,7 @@ public class Main {
         List<String> l=new ArrayList<>();
 
         String oldcontent="rajan";
+
         for(String l3:l2)
         {
             if(l3.contains(oldcontent))
@@ -85,9 +86,6 @@ public class Main {
         }
 
         Files.write(p,l);
-
-
-
 
     }
 

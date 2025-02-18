@@ -83,6 +83,7 @@ ch-'0' when ch is of digit type and u want the actual value of ch in terms of in
             num /= 10;
         }
 
+22. you can either initlize string with null like "" and concatenate or use stringbuilder and then append 
 
 24. one way to check if string or number is palindromic or not is to check itself with its reversal
 
@@ -91,6 +92,12 @@ is value of digit and letter, very efficient way to solve these kind of problems
 
 
 26.for regular expression ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ 
+
+27. return songs[i].toString(); calling song class tostring method 
+
+28.index of char array or string array or any array can be from some other array with ch[se[i]]..
+
+29. also have  isdupli = true; , maintained which is turned to false , for aray loop 
 
 @ using directly , when inside "" thne use \\. else if regular expression just \.
 
@@ -178,6 +185,15 @@ retainAll-It is used to retain only the elements that are present in both the cu
 public void setCharAt (int index, char ch)
  / / replaces a character at the given position
 
+38.charat,tochararray, matches, index, 
+
+39.sometimes in ineer loop , j start from i , and in some cases ,its limit is i like j<i. somestimes , a[i] can be start and 
+end of index .
+
+40. if (parts[i].equals(parts[j])) break; --sometimes , u check when condition is negation like in palindrome 
+
+
+41. one class which store array object of diffe class . SimplePlaylist myPlaylist = new SimplePlaylist(5);   myPlaylist.addSong(new Song("Yesterday", "The Beatles"));
 
 
 strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -501,3 +517,7 @@ class problem
         } or e.getmessage()
 
 
+12.read file and store in list after splitting, then new analysis can be asked like finding cheapest pro and then write into new file 
+analysis will be done on class object , so tostring cal also be called.
+
+to have quote for variable , quote will part of + + before string . 

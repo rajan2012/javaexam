@@ -4,6 +4,8 @@ public class assign04 {
     static String encrypt(String msg, int shift){
         StringBuilder sb = new StringBuilder();
 
+
+
         char[] ch  = msg.toCharArray();
 
         for(int i=0; i< ch.length;i++){

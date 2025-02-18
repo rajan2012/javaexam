@@ -10,8 +10,6 @@ public class Post {
         this.content = content;
         String[] str = hashtags.split("\\s+");
         this.hashtags.addAll(Arrays.asList(str));
-
-
     }
 
     public String getContent() {
