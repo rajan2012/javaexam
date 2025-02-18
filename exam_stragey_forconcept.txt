@@ -83,6 +83,7 @@ ch-'0' when ch is of digit type and u want the actual value of ch in terms of in
             num /= 10;
         }
 
+22. you can either initlize string with null like "" and concatenate or use stringbuilder and then append 
 
 24. one way to check if string or number is palindromic or not is to check itself with its reversal
 
@@ -184,6 +185,12 @@ retainAll-It is used to retain only the elements that are present in both the cu
 public void setCharAt (int index, char ch)
  / / replaces a character at the given position
 
+38.charat,tochararray, matches, index, 
+
+39.sometimes in ineer loop , j start from i , and in some cases ,its limit is i like j<i. somestimes , a[i] can be start and 
+end of index .
+
+40. if (parts[i].equals(parts[j])) break; --sometimes , u check when condition is negation like in palindrome 
 
 
 strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
