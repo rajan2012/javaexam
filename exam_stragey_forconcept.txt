@@ -193,6 +193,9 @@ end of index .
 40. if (parts[i].equals(parts[j])) break; --sometimes , u check when condition is negation like in palindrome 
 
 
+41. one class which store array object of diffe class . SimplePlaylist myPlaylist = new SimplePlaylist(5);   myPlaylist.addSong(new Song("Yesterday", "The Beatles"));
+
+
 strategy for for loop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 1. simple for loop 
@@ -514,3 +517,5 @@ class problem
         } or e.getmessage()
 
 
+12.read file and store in list after splitting, then new analysis can be asked like finding cheapest pro and then write into new file 
+analysis will be done on class object , so tostring cal also be called.

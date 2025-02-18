@@ -21,6 +21,7 @@ public class MusicPlayerApp {
 
         // Try to play a song that doesn't exist
         songDetails = myPlaylist.play("Imagine");
+
         if (songDetails != null) {
             System.out.println("Now playing: " + songDetails);
         } else {
