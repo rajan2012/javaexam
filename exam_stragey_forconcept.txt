@@ -519,3 +519,5 @@ class problem
 
 12.read file and store in list after splitting, then new analysis can be asked like finding cheapest pro and then write into new file 
 analysis will be done on class object , so tostring cal also be called.
+
+to have quote for variable , quote will part of + + before string . 
