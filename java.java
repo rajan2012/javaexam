@@ -892,6 +892,7 @@ you generally want to initialize fields inside the constructor to ensure that yo
 here only 2 variable in Employee 
 
     class Employee extends Person {
+
     private String role;
     private List<Project> projects;
 
