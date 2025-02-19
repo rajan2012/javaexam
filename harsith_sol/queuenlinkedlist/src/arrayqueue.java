@@ -37,6 +37,7 @@ class LinkedListQueue {
             System.out.println("Queue is empty!");
             return -1;
         }
+
         int data = front.data;
         front = front.next;
 

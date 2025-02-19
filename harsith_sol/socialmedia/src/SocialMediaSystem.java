@@ -26,6 +26,7 @@ class SocialMediaSystem {
         // Create post and add to list
         Post newPost = new Post(content, tagsList);
         posts.add(newPost);
+
     }
 
     // Method to collect posts containing keyword in content or hashtags

@@ -4,6 +4,7 @@ import java.util.List;
 public class evaluation {
 
     List<product> products;
+
     public evaluation(List<product> products)
     {
        this.products=products;

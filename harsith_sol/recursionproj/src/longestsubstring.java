@@ -6,6 +6,7 @@ public class longestsubstring {
 
     public static String reversem(String s1) {
         // Base case: if index is out of bounds for either string, return an empty string
+
       int[] ch=new int[256];
 
       StringBuilder sb=new StringBuilder();

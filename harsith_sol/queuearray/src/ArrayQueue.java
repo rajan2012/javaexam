@@ -1,6 +1,7 @@
 
 
 class ArrayQueue {
+
     private int[] queue;
     private int front, rear, size, capacity;
 

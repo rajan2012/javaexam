@@ -2,6 +2,7 @@ public class oneexample
 {
 
     public static int countCat(String str) {
+
         // Base case: If length of string is less than 3, "cat" can't exist
         if (str.length() < 3) {
             return 0;

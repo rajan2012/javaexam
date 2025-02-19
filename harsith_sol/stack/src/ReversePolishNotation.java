@@ -16,6 +16,7 @@ public class ReversePolishNotation {
                 }
                 double b = stack.pop();
                 double a = stack.pop();
+
                 double result;
 
                 switch (token) {
@@ -38,9 +39,11 @@ public class ReversePolishNotation {
 
                 System.out.println("Calculating: " + a + " " + token + " " + b);
                 stack.push(result);
+
             } else {
                 throw new Exception("Invalid token: " + token);
             }
+
             System.out.println("Stack: " + stack);
         }
 

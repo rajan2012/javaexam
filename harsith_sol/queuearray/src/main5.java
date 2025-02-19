@@ -1,4 +1,5 @@
 public class main5 {
+
     public static void main(String[] args) {
         String s1 = "abcde";
         String s2 = "deabc";

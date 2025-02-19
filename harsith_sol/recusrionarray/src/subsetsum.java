@@ -13,6 +13,7 @@ public class subsetsum {
         }
 
         int target2=sum;
+
         int target=sum-a[index];
 
        // System.out.println("target are "+target);

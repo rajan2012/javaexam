@@ -54,10 +54,14 @@ public class Main {
         {
             m.put(b,m.getOrDefault(b,0)+1);
         }
+
         int cnt=0;
+
+
         for(String c:m.keySet())
         {
             System.out.println(c+" "+m.get(c));
+
             if(m.get(c)==1)
             {
                 cnt++;

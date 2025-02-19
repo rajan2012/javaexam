@@ -17,9 +17,11 @@ public class palindrome {
         if (start >= end) {
             return true; // Base case: if pointers cross or meet, it's a palindrome
         }
+
         if (str.charAt(start) != str.charAt(end)) {
             return false; // If characters don't match, not a palindrome
         }
+
         // Recursive case: check the inner substring
         return isPalindromeRecursive(str, start + 1, end - 1);
     }
@@ -42,6 +44,7 @@ public class palindrome {
         // Base case: if index is out of bounds for either string, return an empty string
 
         boolean flag=true;
+
        for(int i=0;i<s1.length()/2;i++)
        {
            if(s1.charAt(i)!=s1.charAt(s1.length()-(i+1)))
