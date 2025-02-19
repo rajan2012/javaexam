@@ -527,3 +527,16 @@ analysis will be done on class object , so tostring cal also be called.
 to have quote for variable , quote will part of + + before string . 
 
 15. in recusion of using string , countCat(str.substring(1));  , increment index by 1
+
+
+16. for circular queue if(queue[(front+i)%capacity]%2==0)
+
+17. when queue is not palindrome if(queue[(front+i)%capacity]!=queue[(rear-i)%capacity])
+
+18. if (front == null) { // If queue becomes empty rear = null; both are null for empty linkedlist 
+
+ if(s1.startsWith(sub))- you can also use this to find reverse of string 
+
+ 19. when wit array use each index elem return a[index]+sumarray(a,index+1);
+
+ 
