@@ -4,6 +4,7 @@ public class Main {
 
     public static String rearrange3(String word, int[] sequence) {
         // Validate the sequence for invalid indices
+
         for (int index : sequence) {
             if (index < 0 || index >= word.length()) {
                 return "Invalid Sequence"; // Return "Invalid Sequence" if any index is out of bounds

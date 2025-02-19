@@ -520,4 +520,10 @@ class problem
 12.read file and store in list after splitting, then new analysis can be asked like finding cheapest pro and then write into new file 
 analysis will be done on class object , so tostring cal also be called.
 
+14.when sometimes , i asked to find continous match in string , put in if condiiton if it not matches then break else add in stringbuilder
+
+ if(!s2.contains(c2))-checking if any char is not in set. 
+
 to have quote for variable , quote will part of + + before string . 
+
+15. in recusion of using string , countCat(str.substring(1));  , increment index by 1

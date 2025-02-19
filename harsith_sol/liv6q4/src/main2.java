@@ -3,8 +3,10 @@ import java.util.Map;
 public class main2 {
 
     public static void addTime(String line, Map<String, Integer> records) {
+
         // Step 1: Split the input string into the name and time components
         String[] parts = line.split(":");
+
         if (parts.length != 2) {
             // Invalid input, so return without doing anything
             return;

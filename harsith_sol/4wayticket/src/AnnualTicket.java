@@ -3,6 +3,8 @@ import java.time.LocalDate;
 class AnnualTicket extends BusTicket {
     private String buyerName;
 
+
+
     // Constructor
     public AnnualTicket(String buyerName, double ticketPrice, LocalDate purchaseDate) {
         super(purchaseDate, ticketPrice);
@@ -22,4 +24,7 @@ class AnnualTicket extends BusTicket {
     public String toString() {
         return "AnnualTicket: " + "Name: " + buyerName + ", " + super.toString();
     }
+
+
+
 }
