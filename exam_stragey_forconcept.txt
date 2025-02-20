@@ -14,6 +14,8 @@ ask basic and normal ques using this
 only in the beginining, think of which collection to use , set for unique stuff, list , map for some counter 
 stroing occurence in indices like visted and unique count . add more 
 
+use copy  paste to copy variable, class content, same for loop or some logic part rather than writing , solution code from moodle 
+
 
 ##################################################################################################################
 
