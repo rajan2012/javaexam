@@ -10,6 +10,11 @@ question exaclty
 ask basic and normal ques using this 
 --give me some of the complex  matrix  problem to solve in java , which also clear my concept, give me code 
 
+
+only in the beginining, think of which collection to use , set for unique stuff, list , map for some counter 
+stroing occurence in indices like visted and unique count . add more 
+
+
 ##################################################################################################################
 
 basic concept  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -539,4 +544,8 @@ to have quote for variable , quote will part of + + before string .
 
  19. when wit array use each index elem return a[index]+sumarray(a,index+1);
 
- 
+
+
+ 1. for class, first to find out how to create object from construcotr , either directlx or through 
+ line, split , mybe throw some exception in constructor, exception message , can be multiple of 
+ variable . could be involve of some collection, do analysis on list and write to file or print 
