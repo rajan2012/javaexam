@@ -13,6 +13,8 @@ public class Main {
         FourWayTicket fourWayTicket = new FourWayTicket("2025-02-01", 40.0);
         System.out.println(fourWayTicket);
 
+        System.out.println();
+
         fourWayTicket.useTicket(); // 3 rides left
         fourWayTicket.useTicket(); // 2 rides left
         fourWayTicket.useTicket(); // 1 ride left

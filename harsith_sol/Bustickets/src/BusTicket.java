@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Objects;
+
 public class BusTicket {
 
     String date;
@@ -12,4 +15,38 @@ public class BusTicket {
        this.price=price;
     }
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public static int getCounter() {
+        return counter;
+    }
+
+
+
+
+    public static void setCounter(int counter) {
+        BusTicket.counter = counter;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
